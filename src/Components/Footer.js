@@ -78,7 +78,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="totop">
-          <a href="#">
+          <a href="www.google.com">
             <i className="fas fa-arrow-up" />
           </a>
         </div>
