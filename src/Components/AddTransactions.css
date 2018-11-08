@@ -1,0 +1,22 @@
+.formInput {
+  padding: 5px 15px;
+  border: solid 0.1rem #9c9c9c;
+  border-radius: 4px;
+  font-size: 1.1rem;
+}
+label {
+  display: none;
+}
+
+select {
+  -webkit-appearance: none;
+  padding: 4px 15px;
+  border: solid 0.1rem #9c9c9c;
+  border-radius: 4px;
+  font-size: 1.1rem;
+}
+.main-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto auto;
+  grid-gap: 4px;
+}

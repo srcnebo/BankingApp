@@ -1,0 +1,101 @@
+footer {
+  background: #444444;
+  color: #e2e2e2;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: space-between;
+  grid-gap: 2rem;
+}
+
+.square {
+  display: grid;
+  grid-template-columns: repeat(4, 50px);
+  grid-gap: 5px;
+}
+
+.box {
+  width: 50px;
+  height: 50px;
+  background-color: #333333;
+  z-index: 20;
+}
+
+.footer-content > div {
+  margin: 60px 0 30px 0;
+}
+.footer-content > div > h4 {
+  text-transform: uppercase;
+}
+
+.footer-copy {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: space-between;
+  position: relative;
+  align-items: center;
+}
+
+.social {
+  justify-self: end;
+}
+
+.social i {
+  font-size: 28px;
+  margin-left: 10px;
+  position: relative;
+}
+
+.social i span {
+  font-size: 0.9rem;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  background: #afafaf;
+  color: #343434;
+  position: absolute;
+  bottom: 2.5rem;
+  left: 0;
+
+  display: none;
+}
+
+.social i:hover {
+  color: #247ebe;
+}
+
+.social i:hover span {
+  display: inline-block;
+}
+
+.social i:hover span::after {
+  content: "";
+  position: absolute;
+  bottom: -9px;
+  left: 10px;
+
+  width: 10px;
+  height: 10px;
+  background: #afafaf;
+
+  clip-path: polygon(0% 0, 0% 100%, 100% 0%);
+  z-index: 0;
+}
+
+.totop {
+  position: fixed;
+  bottom: 35px;
+  right: 30px;
+}
+.totop a {
+  color: #bebebe;
+  font-size: 20px;
+}
+
+.footer-bot {
+  background: #3a3a3a;
+  text-transform: uppercase;
+  font-size: 11px;
+  padding: 20px 0 20px 0;
+}
